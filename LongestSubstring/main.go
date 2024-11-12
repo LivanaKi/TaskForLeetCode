@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	s := "abcabcbb"
 	fmt.Println(lengthOfLongestSubstring(s))
 }
@@ -18,6 +18,8 @@ func lengthOfLongestSubstring(s string) int {
 
 			set[s[j]] = true
 			length++
+
+			fmt.Println(set)
 		}
 
 		if result < length {
