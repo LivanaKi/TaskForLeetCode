@@ -16,15 +16,15 @@ func threeSum(nums []int) [][]int {
 		}
 	}
 
-	mp := make(map[[3]int]int)
+	mp := make(map[[4]int]int)
 	for i := 0; i < len(ans); i++ {
 		var abc []int
 		abc = ans[i]
-		mp[[3]int(abc)]++
+		mp[[4]int(abc)]++
 	}
 	var answer [][]int
 	for val := range mp {
-		answer = append(answer, val[0:3])
+		answer = append(answer, val[0:4])
 	}
 	return answer
 }
